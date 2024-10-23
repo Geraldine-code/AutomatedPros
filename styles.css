@@ -1,0 +1,342 @@
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+
+header, .hero, .content-section, footer {
+  padding-bottom: 20px; /* Add padding below sections */
+}
+
+header {
+  border-bottom: 2px solid #f7f6f6; /* Line between header and hero section */
+}
+
+
+.container-fluid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col-md-2, .col-md-4, .col-md-6 {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  background-color: #333;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.branding {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.navbar-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Vertically center the items */
+}
+
+.nav-item {
+  margin-right: 20px;
+  display: inline-block; /* Display items inline */
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  display: flex;
+  align-items: right;
+}
+
+.nav-link:hover {
+  color: #f44606;
+}
+
+.nav-link i {
+  margin-left: 5px; /* Space between text and icon */
+}
+
+.nav-link span {
+  margin-left: 5px; /* Space between cart icon and count */
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  display:none ;
+}
+
+.dropdown-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  
+}
+
+.dropdown-item:hover {
+  background-color: #f9f9f9;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex; /* Display buttons inline */
+  align-items: center; /* Vertically center the buttons */
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.btn-light {
+  background-color: #fff;
+  color: #ee3405;
+  border: 1px solid #030303;
+}
+
+.btn-light:hover {
+  color: #f44606;
+}
+
+.btn-orange {
+  background-color: #f84904;
+  color: #fff;
+  border: none;
+}
+
+.cart {
+  display: inline-block; /* Display cart inline */
+  margin-left: 10px; /* Space between cart and buttons */
+}
+
+.cart span {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 5px; /* Space between cart icon and number */
+}
+
+.hero {
+  background-color: #ffffff;
+  padding: 0px;
+  display: flex;
+  justify-content:space-between;
+  align-items: stretch;
+  height: 100vh;
+}
+
+.hero-left {
+  flex-basis: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  text-align:center; /* Center the text */
+  background-image: url('404.jpg'); /* Replace with your image URL */
+  background: size 350px; /* Cover the entire area */
+  background-position: center; /* Center the image */
+}
+
+
+.hero-right {
+  flex-basis: 50%;
+  padding: 20px;
+  background-image: url('project.jpeg'); /* Replace with your image URL */
+  background-size: cover; /* Make sure the background image covers the entire column */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  
+}
+
+
+
+.hero-left h1 {
+  font-size: 72px; /* Adjust the size as needed */
+  font-weight: bold;
+  margin-bottom: 20px; /* Space between heading and paragraph */
+}
+
+.hero-left p {
+  font-size: 18px; /* Adjust the size as needed */
+  line-height: 1.5;
+}
+
+.error-code {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  
+}
+
+.go-home-btn {
+  background-color: #ffa07a;
+  color: #fff;
+  border: none;
+}
+
+.content-section {
+  padding: 50px;
+  border-top: 1px solid #ddd; /* Line above content section */
+  border-bottom: 1px solid #ddd; /* Line below content section */
+}
+
+/* Columns */
+
+.col-left {
+  flex-basis: 50%;
+  padding: 20px;
+}
+
+.col-right {
+  flex-basis: 50%;
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center; 
+}
+
+.top-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.top-section img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.bottom-section {
+  margin-top: 20px;
+}
+
+.bottom-section p {
+  margin-bottom: 10px;
+}
+
+
+
+/* Buttons in the right column */
+.col-right .btn-orange {
+  display: flex; /* Add this to ensure content is centered in button */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  padding: 20px 12px; /* Add padding for button size */
+  font-size: 14px; /* Adjust font size */
+  border: none;
+  border-radius: 8px;
+}
+
+.col-right .btn-orange img {
+  width: 20px; /* Size of the logo inside the button */
+  height: 20px; /* Size of the logo inside the button */
+  margin-right: 8px; /* Space between logo and text */
+}
+/* Footer section styles */
+.footer {
+  background-color: #ffffff;
+  color: #353434;
+  padding: 20px;
+}
+
+.footer-map-icon {
+  size: 80px;
+  width: 50px; /* Adjust size as needed */
+  height: auto;
+  margin-right: 2px; /* Space between icon and text */
+  
+  border-radius: 12px;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center; /* Align items vertically centered */
+}
+
+.col-12 {
+  margin-bottom: 20px; /* Add margin for spacing between rows */
+}
+
+.footer-link {
+  color: #292828; /* Set link color to black */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.2s ease;
+  display: block;
+  margin-bottom: 10px
+}
+
+.footer-link:hover {
+  color: #ffa07a; /* Set link hover color to orange */
+  text-decoration: none; /* Keep underline removed on hover */
+}
+
+.text-underline {
+  text-decoration: underline;
+  text-decoration-color: #ffa07a; /* Orange underline */
+}
+
+.text-orange {
+  color: #ffa07a; /* Orange color for specific text */
+}
+
+.text-orange:hover {
+  color: #000; /* Black color on hover */
+}
+
+/* Ensure 'Browse More Templates' has the special styling */
+.footer .text-underline {
+  color: #ffa07a; /* Orange color for 'Browse More Templates' */
+}
+
+.footer .text-underline:hover {
+  color: #ffa07a; /* Black color on hover */
+  text-decoration-color: #ffa07a; /* Orange underline on hover */
+}
+
+
+.footer .copyright {
+  margin-top: 20px;
+  font-size: 14px; /* Adjust font size as needed */
+  color: #232323;
+  text-align: center;
+  justify-content: center;
+
+}
